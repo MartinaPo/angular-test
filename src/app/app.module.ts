@@ -4,22 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TicketListComponent,
-    TicketDetailsComponent
+  AppComponent,
+  TicketListComponent,
+  TicketDetailsComponent
   ],
-  imports:
-  [
+  imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
-      {path: 'ticket/ticket-list', component: TicketListComponent},
-      {path: 'ticket/ticket-details', component: TicketDetailsComponent},
+      {path: 'ticket-list/ticket-list', component: TicketListComponent},
+      {path: 'ticket-details/ticket-details', component: TicketDetailsComponent},
      // {path: '', redirectTo: 'app', pathMatch: 'full'},
     ]),
   ],

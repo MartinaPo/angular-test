@@ -8,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class TicketListComponent implements OnInit {
 
   constructor() { }
-    ngOnInit(): void {
+
+
+  ngOnInit(): void {
+
+
+  }
+  display = false;
+  onPress() {
+    //this.display = true;
+    /*if you want the component to show and hide on click pressed, use
+    use this line*/
+    this.display = !this.display;
   }
 
-  display = false;
-    onPress() {
-      this.display = !this.display;
-  }
 }
