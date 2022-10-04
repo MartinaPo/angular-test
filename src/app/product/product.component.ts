@@ -12,9 +12,9 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.product = [
-      new Product("Bicchiere",  5000, 1),
-      new Product("Penna",  6000 , 2),
-      new Product("Frangicosta",  10000, 3),
+      new Product("Bicchiere",  1000, 1),
+      new Product("Penna",  2000 , 2),
+      new Product("Frangicosta",  3000, 3),
     ];
   }
 

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Calibri;
+  text-align: center;
+  background-color: lightcyan;
+}
+
+h1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px 0 10px 0;
+}
+
