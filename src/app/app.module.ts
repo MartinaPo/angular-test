@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TicketDetailsComponent } from './ticket-details/ticket-details.component';
+import { ProductComponent } from './product/product.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
   AppComponent,
   TicketListComponent,
-  TicketDetailsComponent
+  TicketDetailsComponent,
+  ProductComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +23,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot([
       {path: 'ticket-list/ticket-list', component: TicketListComponent},
       {path: 'ticket-details/ticket-details', component: TicketDetailsComponent},
+      {path: 'product/product', component: ProductComponent}
      // {path: '', redirectTo: 'app', pathMatch: 'full'},
     ]),
   ],
